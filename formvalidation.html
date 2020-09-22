@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Form Validation</title>
+    
+	<script>
+    function validateForm()
+{
+	username = document.myform.uname.value;
+	password = document.myform.pass.value;
+	age = document.myform.age.value;
+	if(username ==""|| username.length<3){
+		alert("enter your name");
+		document.myform.uname.focus();
+	}else if (password ==""||(!password.match(/[A-Z]/))){
+		alert("enter your password which ");
+		document.myform.pass.value="";
+		document.myform.pass.focus();
+	}else if (age ==""|| isNaN(age)){
+		alert("enter your age");
+		document.myform.age.value="";
+		document.myform.age.focus();
+	}else if(document.myform.gender[0].checked==""
+			&&document.myform.gender[1].checked==""){
+		alert("enter gender");
+		document.myform.gender[0].focus();
+	}else{
+		alert("You are registered")
+		document.myform.submit();
+	}
+}	
+
+/*
+	function validate(){
+	if(document.getElementById("username").value==""){
+		alert("enter your name");
+		document.myform.uname.focus();
+	}else if (document.getElementById("password").value==""){
+		alert("enter your password");
+		document.myform.pass.focus();
+	}else if(document.getElementById("gen1").checked==""
+			&&document.getElementById("gen2").checked==""){
+		alert("enter gender");
+		document.myform.gender[0].focus();
+	}else{
+		alert("You are registered")
+		document.myform.submit();
+	}
+}	
+*/
+	</script>
+</head>
+<body>
+<form action="formsuccess.html" name="myform">
+  Name<input type="text" name="uname" id="username" ><br>
+  Password<input type="password" name="pass" id="password"><br>
+  Age<input type="text" name="age" id="age" ><br>
+  Female <input type="radio" name="gender" id="gen1"   value="female"  />
+  Male <input type="radio" name="gender" id="gen2" value="male" />
+  <input type="button" value="Click here " onclick="validateForm()">
+  
+</form>
+
+</body>
+</html>

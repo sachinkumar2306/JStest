@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>For Demo</title>
+</head>
+<body>
+	<script>
+		for(let x=0;x<10;x++) { 
+			document.write(x+" ");
+		}
+		document.write("<br/>");
+
+		var arr =[10, 30,56,98,76];
+
+		for(let i=0;i<arr.length;i++){
+			document.write(arr[i]+" ");
+		}
+		document.write("Using ForIn<br/>");		
+		for(const i in arr){
+			document.write(arr[i]+"<br/> ");
+		}
+		document.write("Using For Of<br/>");		
+		for (const ele of arr) {
+			document.write(ele+"<br/> ");
+		}
+		document.write("Using ForEach<br/>");
+		
+		arr.forEach(function(element,index,arr){
+			document.write(element+"<br/> ");
+
+		})
+		document.write("Using FoeEach<br/>");		
+		arr.forEach(function(element,index,arr){
+			document.write(arr[index]+"<br/> ");
+		})
+		
+	</script>
+</body>
+</html>

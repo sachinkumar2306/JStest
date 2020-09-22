@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation command</title>
+    <script>
+        function call()
+        {
+            if(confirm("You have unsaved message on this page! Do you still want to move to the next page?"))
+            {
+                alert("Bye Bye")
+                // document.myform.submit();
+                document.getElementById("me") = submit();
+            }
+            else
+            {
+                alert("Thanks for staying back")
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="http://www.google.com" onclick="return confirm('Do you want to continue')"><strong>Click Me!</strong></a>
+
+    <form action="demo.html" name ="myform" id= "me">
+        <label>Enter your comments</label>
+        <textarea></textarea>
+        <input type="button" onclick="call()" value="Click Me!">
+
+    </form>
+</body>
+</html>

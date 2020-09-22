@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+    <script>
+        //object Literal
+        var student = {
+            name: "sachin",
+            age : "23",
+            Gender : "M",
+            hobbies : ['Sports', 'Music'],
+            address:{                       //object under the object
+                city: 'Mysore',
+                State: 'Karnataka'
+            }
+        };
+
+        document.write(typeof(student));
+        document.write("<br>")
+        document.write(student.name);
+        document.write("<br>")
+        document.write(student.address.city);
+        document.write("<br>")
+        student.id = 104310
+
+        for (const key in student) {
+           const ele = student[key]
+           document.write(key + " =  " + ele)
+           document.write("<br>")
+           document.write(typeof(key))
+           
+        }
+        var student1 = {
+            name: 'Ayush', id: 20
+        }
+        document.write(typeof(student1))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

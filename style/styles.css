@@ -1,0 +1,35 @@
+body {
+    background:white;
+  }
+   
+  .box {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .strp {
+    width: 330px;
+    height: 50px;
+  }
+
+  #saff {
+    background: orange;
+  }
+
+  #white {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #green {
+    background: green;
+  }
+
+  .ashok_chakra {
+    height: 40px;
+    width: 40px;
+  }
+

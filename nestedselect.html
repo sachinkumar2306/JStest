@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <select id="mySelect" onclick="myFunction()">
+     <option> <label> Select Fruits</label> </option>
+    <option value="Kashmiri Apple,<br>Shimla Apple,<br>US Apple" >Apple</option>
+    <option value="kolhapuri Orange,<br>Nagpur Orange,<br>US Orange">Orange</option>
+    <option value ="palistani Pineapple,<br>Kerala Pineapple,<br>US Pineapple">Pineapple</option>
+    <option value ="Kerla banana,<br>Afganishhani banana,<br>US Pineapple">Banana</option>
+  </select>
+</form>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

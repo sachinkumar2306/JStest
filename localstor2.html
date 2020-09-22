@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage Get item</title>
+</head>
+<body>
+        <div>
+            <p id = "result"></p>
+            <p id = "res"></p>
+        </div>
+        <script>
+            if(Storage != "undefined") 
+            {
+            document.getElementById("result").innerHTML = localStorage.getItem('username');
+            document.getElementById("res").innerHTML = localStorage.getItem("message");
+            }
+        </script>
+    
+</body>
+</html>

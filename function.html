@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fucntion value by element</title>
+</head>
+<body>
+    <script>
+        function greet()
+        {
+            var username = document.getElementById("username").value;
+            // alert("Hi "+ username)
+            // document.write('welcome to the world ' + username)
+            document.getElementById("myid").innerHTML = "have a great day "+username
+        }
+
+        var name = "sachin"
+        res = (typeof name =="string" ? "String" : "Numeric")
+        document.write("it is: ", res)
+
+    </script>
+    <input type="text" id = "username">
+    <input type = "button" onclick="greet()" value="click here">
+    <div id = "myid" style="background-color: wheat; width: 200px;"></div>
+</body> 
+</html>
